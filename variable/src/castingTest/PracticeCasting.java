@@ -11,7 +11,6 @@ public class PracticeCasting {
 		System.out.printf("%d%d\n",num1,plusStr);
 		
 		
-		
 //		akj로 AKJ만들기
 		int a = 'a'- 32;
 		int k = 'k'- (char)32;
