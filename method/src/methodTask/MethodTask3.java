@@ -1,4 +1,4 @@
-package methodTest;
+package methodTask;
 
 import java.util.Scanner;
 

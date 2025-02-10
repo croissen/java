@@ -1,4 +1,4 @@
-package methodTest;
+package methodTask;
 
 public class MethodTask3Manual {
    
@@ -48,7 +48,7 @@ public class MethodTask3Manual {
 //   모든 결과 값은 콘솔에 출력하여 확인하기
    
    public static void main(String[] args) {
-      MethodTask3 mt3 = new MethodTask3();
+      MethodTask3Manual mt3 = new MethodTask3Manual();
       int result1 = 0, result3 = 0;
 //      null : 초기값이 어떤 값으로 대체될 때 사용되는 값, 크기 할당x
 //      "" : 결과값이 ""을 연결해서 사용하거나 결과값을 얻을 때, 크기 할당(2byte)
@@ -76,16 +76,7 @@ public class MethodTask3Manual {
       result5 = mt3.changeToUpperCaseOrToLowerCase("오늘 즐거운 Friday!");
       System.out.println(result5);
       
+      
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
 }
