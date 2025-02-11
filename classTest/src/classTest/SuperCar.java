@@ -14,7 +14,7 @@ public class SuperCar {
 	
 //	초기화블록
 	{
-		this.password = "0000";
+	this.password = "0000";
 	}
 	
 //	static블록
@@ -81,7 +81,7 @@ public class SuperCar {
 					ferrari.engineStop();
 					System.out.println(ferrari.brand + "시동꺼짐");
 				}else {
-					System.out.println("이미 시동이 켜져있습니다.");
+					System.out.println("이미 시동이 꺼져있습니다.");
 				}
 			}else {
 				System.out.println("다시 눌러!");

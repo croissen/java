@@ -38,6 +38,6 @@ public class StaticTest {
 		st.increse();
 		st.increse();
 		st.increse();
-				
+
 	}
 }

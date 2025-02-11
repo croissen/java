@@ -23,10 +23,10 @@ public class Student {
 	}
 	
 	public static void main(String[] args) {
-		Student st = new Student(1, "곽승민" , 100 , 100 , 10);
+		Student st = new Student(1123, "곽승민" , 100 , 100 , 10);
 		System.out.println("총점 : " + st.total);
 		System.out.println("평균 : " + st.average);
-		
+		System.out.println(st.schoolNum);
 	}
 	
 	

@@ -23,7 +23,7 @@ public class Company {
 		Company person1 = new Company("피카츄", 20);
 		Company person2 = new Company("라이츄", 21);
 		Company person3 = new Company("파이리", 22);
-		Company person4 = new Company("꼬부기", 23);
+		Company person4 = new Company("꼬부기", 23);																
 
 		person1.input += 10_000;
 		person1.input += 1_000;
