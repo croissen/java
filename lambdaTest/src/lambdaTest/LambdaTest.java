@@ -1,0 +1,17 @@
+package lambdaTest;
+
+public class LambdaTest {
+	public static void main(String[] args) {
+//		LambdaInter lambdaInter = new LambdaInter() {
+//			
+//			@Override
+//			public boolean chseckMultipleOf10(int num) {
+//				return num % 10 == 0;
+//			}
+//		};
+		
+//		LambdaInter lambdaInter = (number) -> {return number % 2 == 0;};
+		LambdaInter lambdaInter = number -> number % 2 == 0;
+		System.out.println(lambdaInter.chseckMultipleOf10(20));
+	}
+}
