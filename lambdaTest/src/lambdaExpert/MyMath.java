@@ -9,7 +9,7 @@ public class MyMath {
             case "+" -> (a, b) -> a + b;
             case "-" -> (a, b) -> a - b;
             case "*" -> (a, b) -> a * b;
-            case "/" -> (a, b) -> a / b; 
+            case "/" -> (a, b) -> a / b;																
             default -> (a, b) -> 0;
         };
     }
