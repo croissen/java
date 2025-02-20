@@ -45,7 +45,7 @@ public class StreamTask3 {
 	    
 //      4) a~z까지 ArrayList에 담고 출력하기
 	    ArrayList<Integer> misson4 = new ArrayList<Integer>();
-//	    IntStream.rangeClosed(97, 122).forEach((c) -> {System.out.println((char)c);});
+//	    IntStream.rangeClosed('a', 122).forEach((c) -> {System.out.print((char)c);});
 	    
 //	    4-1) a~z까지 A~Z로 변경해서 출력하기
 	    ArrayList<String> misson41 = new ArrayList<String>();
@@ -73,7 +73,7 @@ public class StreamTask3 {
 	    
 //      8) "hello", "java", "apple", "test" 문자열들을 ArrayList에 담고 'a'를 포함하고 있는 단어만 출력하기
 	    ArrayList<String> misson8 = new ArrayList<String>(Arrays.asList("hello", "java", "apple", "test"));
-	    misson8.stream().filter(str -> str.contains("a")).forEach(System.out::println);;
+//	    misson8.stream().filter(str -> str.contains("a")).forEach(System.out::println);;
 	    
 //      9) 1~10까지 ArrayList에 담고 모든 합을 출력하기
 //	    ArrayList<Integer> misson9 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
@@ -106,7 +106,10 @@ public class StreamTask3 {
 				new Member("김영희", "골프_야구", "운동 선수는 나의 꿈"),
 				new Member("흰둥이", "개발_축구_농구", "개발도 운동도 다 잘해요!")
 				));
-	    users.stream().filter(str -> str.getHobby().contains("개발")).forEach(System.out::println);
+//	    users.stream()
+//	    	 .filter(str -> str.getHobby()
+//	    	 .contains("개발"))
+//	    	 .forEach(System.out::println);
 	    
 	}
 }
