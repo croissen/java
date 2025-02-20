@@ -38,8 +38,8 @@ public class StreamTest {
 //		chars() : 문자열을 Intstream으로 변환
 		String data3 = "ABCDEFG";
 		String data4 = "ㄱㄴㄷㄹ";
-//		data3.chars().forEach(System.out::println);
-//		data4.chars().forEach((c) -> {System.out.println((char)c);});
+		data3.chars().forEach(System.out::println);
+		data4.chars().forEach((c) -> {System.out.println((char)c);});
 		
 //		.map() 값을 바꾼다
 //		data4.chars().map((c) -> c + 4).forEach(c -> {System.out.println((char)c);});
@@ -60,33 +60,33 @@ public class StreamTest {
 		users.add(user4);
 		users.add(user5);
 		
-		users.forEach(System.out::println);
+//		users.forEach(System.out::println);
 //		users.stream().map((user) -> user.getJob()).map((job) -> {return "직업: " + job;}).forEach(System.out::println);
 //		users.stream().map(User::getJob).map((job) -> {return "직업: " + job;}).forEach(System.out::println);
 
 //		유저의 나이만 풀력하기
-		users.stream().map((user) -> user.getAge())
-					  .map((age) -> {return "나이: " + age + "살";})
-					  .forEach(c -> {System.out.println(c);});
+//		users.stream().map((user) -> user.getAge())
+//					  .map((age) -> {return "나이: " + age + "살";})
+//					  .forEach(c -> {System.out.println(c);});
 //		users.stream().map(User::getAge).map((age) -> {return "나이: " + age + "살";}).forEach(System.out::println);
 		
 //		실습 
 //		"/news", "/game", "/brand", "/rank"
 //		ArrayList에 담고, 모든 경로 앞에 "/app"을 붙여준다.
 		ArrayList<String> task = new ArrayList<String>(Arrays.asList("/news", "/game", "/brand", "/rank"));
-		task.stream().map((add) -> {return "/app" + add;}).forEach(System.out::println);
+//		task.stream().map((add) -> {return "/app" + add;}).forEach(System.out::println);
 
 		
 //		정렬 : sorted()
 		ArrayList<Integer> numbers = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
-		numbers.stream().sorted().forEach(System.out::println);
+//		numbers.stream().sorted().forEach(System.out::println);
 //		내림차순
-		numbers.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
+//		numbers.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
 		
 //		결과값의 리턴을 다양한 타입으로 리턴 : collect(Collectors.to~());
 		ArrayList<Integer> numbers2 = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
 		List<Integer> list = numbers2.stream().map(n -> n + 10).collect(Collectors.toList());
-		System.out.println(list.toString());
+//		System.out.println(list.toString());
 		
 //		문자열로 바꾸기
 		ArrayList<Integer> numbers3 = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
@@ -97,7 +97,7 @@ public class StreamTest {
 		ArrayList<Integer> numbers4 = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
 		ArrayList<Integer> even = new ArrayList<Integer>();
 		numbers4.stream().filter((n) -> n % 2 == 0).forEach(even::add);
-		even.forEach(System.out::println);
+//		even.forEach(System.out::println);
 		
 		
 	}

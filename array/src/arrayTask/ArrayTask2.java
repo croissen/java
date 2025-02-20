@@ -33,8 +33,6 @@ public class ArrayTask2 {
 	         charArray[i] = stringData.charAt(i);
 	         if (charArray[i] >= 65 && charArray[i] < 97) {
 	            charArray[i] += 32;
-	         }else if (charArray[i] >= 97 && charArray[i] < 129) {
-	            charArray[i] -= 32;
 	         }
 	         System.out.print(charArray[i]);
 	      }      

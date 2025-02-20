@@ -13,11 +13,8 @@ public class HashSetTest {
 		mbtiType.add("INFP");
 		mbtiType.add("ENFP");
 		mbtiType.add("ENTJ");
-		mbtiType.add("ENFJ");
-		mbtiType.add("INTP");
-		mbtiType.add("INTJ");
-		mbtiType.add("INTP");
-		System.out.println(mbtiType);
+
+//		System.out.println(mbtiType);
 		
 //		Iterator
 //		순서가 없을 때 순서를 부여하는 자료구조
@@ -30,7 +27,7 @@ public class HashSetTest {
 //		중복된 데이터 삭제
 		ArrayList<Integer> datas = new ArrayList<Integer>(Arrays.asList(1,2,3,4,4,9,9,9,9));
 		datas = new ArrayList<Integer>(new HashSet<Integer>(datas));
-		System.out.println(datas);
+//		System.out.println(datas);
 		
 		
 		
